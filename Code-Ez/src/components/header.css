@@ -9,6 +9,10 @@
   align-items: center;
 
 }
+.heading{
+  text-decoration: none;
+  color: inherit;
+}
 .image{
     display: flex;
     align-items: center;

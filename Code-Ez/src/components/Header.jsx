@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from 'react-router';
 import "./header.css";
 import logo from "../assets/logo.svg";
 
@@ -13,7 +14,7 @@ export function Header() {
       <div className="logo-section" style={{ marginLeft: "5px" }}>
         <div className="image">
           <img src={logo} alt="Logo" />
-          <h2>CodeEz</h2>
+          <h2  ><Link to="/" className="heading">CodeEz</Link></h2>
         </div>
         <p>A place to practice your code.</p>
       </div>
