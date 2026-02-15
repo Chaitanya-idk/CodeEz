@@ -1,16 +1,14 @@
 import './App.css'
 import { Content } from './components/Content'
-import { Footer } from './components/Footer'
-import { Header } from './components/Header'
+import {Routes,Route} from 'react-router'
+
 function App() {
-
-
   return (
-    <>
-      <Header />
-      <Content />
-      <Footer />
-    </>
+    
+    <Routes>
+      <Route index element={<Content />}/>
+      
+    </Routes>
   )
 }
 
