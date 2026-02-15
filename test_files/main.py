@@ -8,7 +8,7 @@ app = FastAPI()
 DB_CONFIG = {
     "dbname": "CodeEz",
     "user": "postgres",
-    "password": "ejxcg64E", # Replace with your pgAdmin password
+    "password": "*****", 
     "host": "localhost",
     "port": "5432"
 }
@@ -18,8 +18,6 @@ def get_all_questions():
     try:
         conn = psycopg2.connect(**DB_CONFIG)
         cursor = conn.cursor(cursor_factory=RealDictCursor)
-        
-        # Query your specific table
         cursor.execute("SELECT * FROM sts3007_t;")
         questions = cursor.fetchall()
         
