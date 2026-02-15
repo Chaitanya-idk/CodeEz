@@ -3,7 +3,7 @@ export function Footer(){
     return (
         <div className="footer">
             <div className="left">
-                <p><a href='https://www.linkedin.com/in/hema-sai-chaitanya-neeli/'>Find me on LinedIn</a></p>
+                <p><a href='https://www.linkedin.com/in/hema-sai-chaitanya-neeli/'>Find me on LinkedIn</a></p>
             </div>
             <div className="middle">
                 <p>Made with '❤️'</p>

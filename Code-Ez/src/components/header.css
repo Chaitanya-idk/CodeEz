@@ -3,7 +3,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: black;
+  background-color: black,0.4;
   display: flex;
   justify-content: space-between;
   align-items: center;

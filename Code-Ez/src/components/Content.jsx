@@ -2,6 +2,7 @@
 import './Content.css';
 import { Footer } from './Footer';
 import { Header } from './Header';
+import {Link} from 'react-router';
 export function Content() {
   return (
     <>
@@ -14,7 +15,7 @@ export function Content() {
           practice your STS questions along with Test Cases.
         </p>
       <div style={{display:"flex",gap:"20px"}}>
-        <button>STS 3007</button>
+        <Link to="problems"><button >STS 3007</button></Link>
         <button>STS 4006</button>
         </div>
       </section>
