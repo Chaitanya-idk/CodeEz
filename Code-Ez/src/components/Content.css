@@ -1,0 +1,36 @@
+.about {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 15px;
+  text-align: center;
+}
+
+.about h1{
+    font-size: 1.5rem;
+}
+
+.about p {
+  max-width: 50vw; 
+  font-size: large;
+  line-height: 1.6; 
+  color: var(--text-color);
+}
+
+button {
+  padding: 10px;
+  width: 7em;
+  background-color: var(--bg-color);
+  border: 1.5px solid var(--border-color); 
+  border-radius: 1000px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease; 
+}
+
+button:hover {
+  background-color: var(--button-hover);
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -31,7 +31,6 @@
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       }
 
-  
       .navbar h2,
       .navbar h3,
       .navbar p {
@@ -48,9 +47,15 @@
       .navbar div:hover h3,
       .navbar div:hover h2 {
         color: #fff;
-        text-shadow:
-          0 0 10px rgba(255, 255, 255, 0.8);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         transform: scale(1.02);
+      }
+
+      .about {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        gap: 15px;
       }
     </style>
   </head>
@@ -70,6 +75,18 @@
         <h3>Github Repo</h3>
       </div>
     </div>
-    <div class="container"></div>
+    <div class="container">
+
+      <section class="about">
+        <h2>Don't Fear STS anymore with CodeEz</h2>
+        <p>
+          Many Students face problems writing code directly during the exam days
+          having no confidence. So we have developed a website to check and
+          practice your STS questions along with Test Cases.
+        </p>
+
+        <button>STS_3007</button>
+      </section>
+    </div>
   </body>
 </html>
