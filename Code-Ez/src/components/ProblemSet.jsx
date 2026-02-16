@@ -21,7 +21,7 @@ export function ProblemSet() {
           <div key={problem.id} className="problem-row">
             <div className="problem-main-content">
               <span className="qid">{problem.qid}.</span>
-              <a href={`/problem/${problem.id}`} className="problem-title">
+              <a href={`/problem/${problem.qid}`} className="problem-title">
                 {problem.title}
               </a>
             </div>
