@@ -4,7 +4,7 @@ import { Footer } from './Footer';
 import {Link} from 'react-router';
 export function Content() {
   return (
-    <>
+    <div className='master'>
       <section className="about">
         <h1 style={{fontSize :"2.5rem"}}>Don't Fear STS anymore with CodeEz</h1>
         <p style={{marginTop :"2rem", marginBottom :"2rem"}}>
@@ -18,6 +18,6 @@ export function Content() {
         </div>
       </section>
       <Footer />
-    </>
+    </div>
   );
 }

@@ -1,23 +1,12 @@
 
-.problems-container {
-  background-color: var(--bg-color);
-  min-height: 100vh;
-  padding: 40px 20px 120px 20px;
-  transition: background-color 0.3s ease;
-}
-
-.dark-theme .problems-container {
-  background-color: #0a0e27;
-}
-
-.problems-container h1 {
+h1 {
   font-size: 2rem;
-  margin: 20px;
+  padding: 0px;
+  margin-left:20px ;
   color: var(--text-color);
   transition: color 0.3s ease;
 }
 
-/* ===== PROBLEM ROW ===== */
 .problem-row {
   display: flex;
   justify-content: space-between;
@@ -44,7 +33,7 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* ===== PROBLEM MAIN CONTENT ===== */
+
 .problem-main-content {
   display: flex;
   align-items: center;
@@ -62,7 +51,6 @@
   color: #7a8495;
 }
 
-/* ===== PROBLEM TITLE ===== */
 .problem-title {
   font-size: 1.2rem;
   text-decoration: none;
@@ -83,7 +71,6 @@
   color: #58acff;
 }
 
-/* ===== DIFFICULTY BADGE ===== */
 .difficulty {
   font-size: 1.1rem;
   font-weight: 600;

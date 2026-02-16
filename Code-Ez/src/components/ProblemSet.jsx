@@ -12,11 +12,10 @@ export function ProblemSet() {
   }, []);
   return (
     <>
-
       <h1>Problems</h1>
       {problems.map((problem) => {
         return (
-          <div key={problem.id} className="problem-row">
+          <div key={problem.qid} className="problem-row">
             <div className="problem-main-content">
               <span className="qid">{problem.qid}.</span>
               <a href={`/problems/${problem.qid}`} className="problem-title">
@@ -29,7 +28,6 @@ export function ProblemSet() {
           </div>
         );
       })}
-
       <Footer />
     </>
   );

@@ -27,7 +27,7 @@ exports.getProblemById = async (req, res) => {
 exports.getAllProblems = async (req, res) => {
   try {
     const query = `
-      SELECT qid, title, difficulty, topics, explanation, sample_input, sample_output 
+      SELECT qid, title, difficulty
       FROM sts3007_t 
       ORDER BY qid ASC
     `;
