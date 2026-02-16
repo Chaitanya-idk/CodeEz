@@ -1,14 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {Link} from 'react-router';
 import "./header.css";
 import logo from "../assets/logo.svg";
 
-export function Header() {
-  const [isDark, setIsDark] = useState(false);
-  useEffect(() => {
-    document.body.className = isDark ? "dark-theme" : "light-theme";
-  }, [isDark]);
-
+export function Header({ isDark, setIsDark }) {
   return (
     <div className="navbar">
       <div className="logo-section" style={{ marginLeft: "5px" }}>

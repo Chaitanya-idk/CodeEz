@@ -1,4 +1,3 @@
-import { Header } from "./Header.jsx";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./ProblemSet.css";
@@ -13,7 +12,6 @@ export function ProblemSet() {
   }, []);
   return (
     <>
-      <Header />
 
       <h1>Problems</h1>
       {problems.map((problem) => {
@@ -21,7 +19,7 @@ export function ProblemSet() {
           <div key={problem.id} className="problem-row">
             <div className="problem-main-content">
               <span className="qid">{problem.qid}.</span>
-              <a href={`/problem/${problem.qid}`} className="problem-title">
+              <a href={`/problems/${problem.qid}`} className="problem-title">
                 {problem.title}
               </a>
             </div>

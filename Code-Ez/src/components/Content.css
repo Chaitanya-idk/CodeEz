@@ -1,36 +1,59 @@
 .about {
   margin-top: 10vh;
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  flex-direction: column;
+  align-items: center;
   gap: 15px;
   text-align: center;
+  padding: 20px;
+  transition: color 0.3s ease;
 }
 
-.about h1{
-    font-size: 1.5rem;
+.about h1 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  transition: color 0.3s ease;
 }
 
 .about p {
-  max-width: 50vw; 
+  max-width: 50vw;
   font-size: large;
-  line-height: 1.6; 
+  line-height: 1.6;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.dark-theme .about h1,
+.dark-theme .about p {
   color: var(--text-color);
 }
+
 
 button {
   padding: 10px;
   width: 7em;
   background-color: var(--bg-color);
-  border: 1.5px solid var(--border-color); 
+  border: 1.5px solid var(--border-color);
   border-radius: 1000px;
   color: var(--text-color);
   cursor: pointer;
-  transition: all 0.3s ease; 
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.dark-theme button {
+  background-color: #131829;
+  border: 1.5px solid #1c2333;
+  color: var(--text-color);
 }
 
 button:hover {
   background-color: var(--button-hover);
-  transform: translateY(-2px); 
+  transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dark-theme button:hover {
+  background-color: #1a2040;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
 }

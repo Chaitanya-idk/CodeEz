@@ -1,12 +1,10 @@
 
 import './Content.css';
 import { Footer } from './Footer';
-import { Header } from './Header';
 import {Link} from 'react-router';
 export function Content() {
   return (
     <>
-    <Header />
       <section className="about">
         <h1 style={{fontSize :"2.5rem"}}>Don't Fear STS anymore with CodeEz</h1>
         <p style={{marginTop :"2rem", marginBottom :"2rem"}}>

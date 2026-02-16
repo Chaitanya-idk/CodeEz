@@ -1,62 +1,50 @@
-.problem-row:hover { background-color: white; } 
-.problem-row:hover { background-color: var(--row-hover) !important; }
 
+.problems-container {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  padding: 40px 20px 120px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.dark-theme .problems-container {
+  background-color: #0a0e27;
+}
+
+.problems-container h1 {
+  font-size: 2rem;
+  margin: 20px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+/* ===== PROBLEM ROW ===== */
 .problem-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--bg-color);
   border-bottom: 1px solid var(--border-color);
+  margin-bottom: 1px;
+  padding: 18px 25px;
   color: var(--text-color);
+  transition: all 0.2s ease;
 }
 
-.problem-title {
-  color: var(--text-color) !important; 
-}
-
-.dark-theme .problem-row {
-    border-bottom: 1px solid #333; 
-    background-color: #1a1a1a;
-}
-
-
-.problem-row {
-    padding: 20px 24px;
-    align-items: center;
-}
 .problem-row:hover {
   background-color: var(--row-hover);
 }
 
-
-.problems-container {
-  background-color: var(--bg-main);
-  min-height: 100vh;
-  padding: 40px 20px 120px 20px;
-}
-h1 {
-  font-size: 2rem;
-  margin: 20px;
-  color: var(--text-color);
+.dark-theme .problem-row {
+  background-color: #131829;
+  border-bottom: 1px solid #1c2333;
 }
 
-.problem-row {
-  background-color: var(--bg-secondary);
-  margin-bottom: 2px; 
-  border-bottom: 1px solid var(--border-subtle);
-  padding: 16px 24px;
-  transition: all 0.2s ease;
-}.problem-row {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  background-color: var(--bg-row);
-  margin-bottom: 1px; 
-  padding: 18px 25px;
-  transition: background 0.2s ease;
+.dark-theme .problem-row:hover {
+  background-color: #1a2040;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.problem-row:hover {
-  background-color: var(--bg-hover);
-}
-
+/* ===== PROBLEM MAIN CONTENT ===== */
 .problem-main-content {
   display: flex;
   align-items: center;
@@ -67,28 +55,64 @@ h1 {
   font-size: 1.1rem;
   color: #8c8c8c;
   min-width: 30px;
+  transition: color 0.3s ease;
 }
 
+.dark-theme .qid {
+  color: #7a8495;
+}
+
+/* ===== PROBLEM TITLE ===== */
 .problem-title {
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   text-decoration: none;
   color: #262626;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .problem-title:hover {
   color: #007aff;
 }
 
+.dark-theme .problem-title {
+  color: #e8ecf1;
+}
 
+.dark-theme .problem-title:hover {
+  color: #58acff;
+}
+
+/* ===== DIFFICULTY BADGE ===== */
 .difficulty {
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.5px;
   min-width: 80px;
   text-align: right;
+  transition: color 0.3s ease;
 }
 
-.easy { color: #00af9b; }
-.medium { color: #ffb800; }
-.hard { color: #ff2d55; }
+.easy {
+  color: #00af9b;
+}
+
+.medium {
+  color: #ffb800;
+}
+
+.hard {
+  color: #ff2d55;
+}
+
+.dark-theme .easy {
+  color: #00d4aa;
+}
+
+.dark-theme .medium {
+  color: #ffd60a;
+}
+
+.dark-theme .hard {
+  color: #ff6b7a;
+}

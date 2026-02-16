@@ -1,0 +1,94 @@
+.problem-row:hover { background-color: white; } 
+.problem-row:hover { background-color: var(--row-hover) !important; }
+
+.problem-row {
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.problem-title {
+  color: var(--text-color) !important; 
+}
+
+.dark-theme .problem-row {
+    border-bottom: 1px solid #333; 
+    background-color: #1a1a1a;
+}
+
+
+.problem-row {
+    padding: 20px 24px;
+    align-items: center;
+}
+.problem-row:hover {
+  background-color: var(--row-hover);
+}
+
+
+.problems-container {
+  background-color: var(--bg-main);
+  min-height: 100vh;
+  padding: 40px 20px 120px 20px;
+}
+h1 {
+  font-size: 2rem;
+  margin: 20px;
+  color: var(--text-color);
+}
+
+.problem-row {
+  background-color: var(--bg-secondary);
+  margin-bottom: 2px; 
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 24px;
+  transition: all 0.2s ease;
+}.problem-row {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: var(--bg-row);
+  margin-bottom: 1px; 
+  padding: 18px 25px;
+  transition: background 0.2s ease;
+}
+
+.problem-row:hover {
+  background-color: var(--bg-hover);
+}
+
+.problem-main-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.qid {
+  font-size: 1.1rem;
+  color: #8c8c8c;
+  min-width: 30px;
+}
+
+.problem-title {
+  font-size: 1.2rem; 
+  text-decoration: none;
+  color: #262626;
+  font-weight: 500;
+}
+
+.problem-title:hover {
+  color: #007aff;
+}
+
+
+.difficulty {
+  font-size: 1.1rem; 
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  min-width: 80px;
+  text-align: right;
+}
+
+.easy { color: #00af9b; }
+.medium { color: #ffb800; }
+.hard { color: #ff2d55; }
