@@ -1,5 +1,5 @@
 const pool = require("../db");
-
+const axios = require("axios");
 exports.getProblemById = async (req, res) => {
   try {
     const { id } = req.params; 
@@ -37,5 +37,36 @@ exports.getAllProblems = async (req, res) => {
   } catch (err) {
     console.error(err.message);
     res.status(500).json({ error: "Database connection error" });
+  }
+};
+
+
+exports.runCode = async (req, res) => {
+  const { code, input } = req.body;
+
+  const options = {
+    method: 'POST',
+    url: 'https://api.onecompiler.com/v1/run',
+    headers: {
+      'Content-Type': 'application/json',
+      'X-API-Key': process.env.ONE_COMPILER_KEY 
+    },
+    data: {
+      language: "java",
+      stdin: input,
+      files: [
+        {
+          name: "Main.java",
+          content: code
+        }
+      ]
+    }
+  };
+
+  try {
+    const response = await axios.request(options);
+    res.status(200).json(response.data);
+  } catch (error) {
+    res.status(500).json({ error: "Execution failed", details: error.message });
   }
 };
