@@ -23,7 +23,6 @@ export function Solving() {
 
 const [output, setOutput] = useState("");
 const [isRunning, setIsRunning] = useState(false);
-const[d,setD] = useState("");
 console.log(isRunning);
 async function showValue() {
   if (!editorRef.current) return;
@@ -46,7 +45,6 @@ async function showValue() {
       code: userCode,
       input: inputForRun
     });
-    setD(response.data);
     const result = response.data;
     const expected = current && current.sample_output != null ? String(current.sample_output).replace(/\r\n/g, "\n").trim() : "";
     const actualRaw = result && result.stdout != null ? String(result.stdout) : "";
@@ -105,7 +103,7 @@ async function showValue() {
         <div className="codeOutput">
             <h2>Output</h2>
             <hr></hr>
-            <p className="userOutput">{d}</p>
+            <p className="userOutput"></p>
         </div>
         <div className="testCases">
             <h2>Test Cases</h2>
